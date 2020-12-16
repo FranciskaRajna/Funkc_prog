@@ -4,16 +4,6 @@
 start() ->
     register(server, spawn(fun() -> loop() end)).
 
-%receive
- %   pattern1 ->
-  %      action1;
-   % pattern2 ->
-    %action2;
-    %....
-    %patternn ->
-     %   actionn
-%end.
-
 %%Async function
 sendAsync(Pid, M) ->
     Pid ! M.
